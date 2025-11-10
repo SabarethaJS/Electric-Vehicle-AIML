@@ -108,3 +108,75 @@ Expected Outcomes
 This project provides a foundation for integrating AI and ML in the field of electric vehicles.
 By analyzing real-world EV datasets, the project aims to demonstrate how predictive modeling can support the design, classification, and enhancement of EV systems.
 This work will also enhance understanding of data preprocessing, model selection, and evaluation in practical AIML applications.
+
+
+ Week 2: Machine Learning Model Training
+
+Objective
+
+The goal of this week’s task is to train a **Machine Learning model** that can analyze and classify electric vehicles based on various attributes such as make, model, range, and price. This helps in understanding how data-driven insights can be applied in the electric vehicle domain.
+
+Steps Performed
+
+1. Data Loading:
+
+   * Uploaded and read the dataset `Electric_Vehicle_Population_Data.csv` using `pandas`.
+   * Performed initial exploration of data to understand column types and value distribution.
+
+2. Data Preprocessing:
+
+   * Handled missing values and removed unnecessary columns.
+   * Encoded categorical data such as *Make* and *Model* using `LabelEncoder`.
+   * Normalized numeric columns like *Electric Range* and *Base MSRP (Price)* for better model accuracy.
+
+3. Feature Selection:
+
+   * Selected relevant columns for training:
+
+     ```
+     [Make, Model, Electric Range, Base MSRP]
+     ```
+   * Target variable:
+
+     ```
+     Electric Vehicle Type (BEV or PHEV)
+     ```
+
+4. Model Training:
+
+   * Split dataset into **Training (80%)** and **Testing (20%)** sets using `train_test_split`.
+   * Trained a **Random Forest Classifier** to predict the type of electric vehicle.
+
+5. Model Evaluation:
+
+   * Calculated **Accuracy**, **Confusion Matrix**, and **Classification Report**.
+   * Displayed results to measure how well the model performs on unseen data.
+
+6. **Prediction:**
+
+   * Tested the model by predicting the vehicle type for a **new sample input** (for example, Tesla Model 3).
+   * Displayed the prediction as either:
+
+     
+     0 → BEV (Battery Electric Vehicle)
+     1 → PHEV (Plug-in Hybrid Electric Vehicle)
+   
+ Results
+
+* The trained machine learning model achieved an **accuracy of 99%** on the test dataset.
+* The model successfully predicted the type of electric vehicle based on its specifications.
+
+ Tools & Technologies Used
+
+* **Python**
+* **Google Colab**
+* **Pandas**
+* **NumPy**
+* **Scikit-learn**
+* **Matplotlib / Seaborn (optional for visualization)**
+
+ Conclusion
+
+This week’s task demonstrated how to build and train a machine learning model using real-world electric vehicle data.
+By preprocessing data, training a classification model, and evaluating accuracy, we gained insights into how ML can help in analyzing and categorizing EVs efficiently.
+
