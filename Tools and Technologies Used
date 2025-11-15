@@ -1,0 +1,55 @@
+1. Programming Language: Python
+
+Python is used for data processing, machine learning, and building the chatbot.
+
+Popular for ML projects because of readable syntax and wide library support.
+
+2. Libraries:
+
+pandas
+
+Used to read, clean, and manipulate datasets.
+
+Handles tabular data like Make, Model, Year, MSRP efficiently.
+
+scikit-learn
+
+Provides machine learning algorithms for classification.
+
+Used to train a model that predicts EV type (BEV/PHEV).
+
+Offers tools for preprocessing, model evaluation, and saving the trained model.
+
+streamlit
+
+Used to build a web-based interactive interface (chatbot).
+
+Allows users to enter EV details and get real-time predictions.
+
+Requires minimal code compared to building a full web app.
+
+3. IDE: VS Code / PyCharm
+
+Integrated Development Environment (IDE) for writing and managing Python code.
+
+Features like syntax highlighting, debugging, and version control integration make coding easier.
+
+4. Platform for Chatbot: Streamlit
+
+Streamlit runs the chatbot in a browser interface, making it easy for users to interact.
+
+Users don’t need to know Python to use the app.
+
+5. Web Browser
+
+Required to open the Streamlit app after running streamlit run app.py.
+
+Compatible with Chrome, Edge, or Firefox.
+
+6. Machine Learning Concepts Used
+
+Data Preprocessing: Handling categorical variables like Make and Model using One-Hot Encoding.
+
+Model Training: Training a classifier to predict EV type based on input features.
+
+Model Persistence: Saving the trained model using pickle so it can be reused without retraining.
