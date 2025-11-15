@@ -1,0 +1,5 @@
+- Successfully developed a machine learning model to predict EV type (BEV or PHEV)
+- Built an interactive Streamlit chatbot for real-time predictions
+- Users can quickly determine EV type by entering Make, Model, Model Year, and Base MSRP
+- Demonstrates the integration of Python, machine learning, and web-based user interface
+- Project provides a **simple, accurate, and user-friendly solution** for EV type identification
