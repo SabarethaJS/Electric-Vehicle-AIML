@@ -1,0 +1,26 @@
+1. Data Collection:
+   • Collected EV dataset including Make, Model, Model Year, and Base MSRP
+   • Labeled each vehicle as BEV or PHEV
+
+2. Data Preprocessing:
+   • Handled missing or inconsistent values
+   • Converted categorical features (Make, Model) into numerical form using One-Hot Encoding
+   • Combined encoded features with numerical features (Model Year, Base MSRP)
+
+3. Model Training:
+   • Selected a classifier suitable for predicting EV type
+   • Split dataset into training and testing sets (typically 80% train, 20% test)
+   • Trained the model to classify EV type accurately
+
+4. Model Saving:
+   • Saved the trained model as 'ev_type_model.pkl' using pickle
+   • Ensures model can be loaded later without retraining
+
+5. Chatbot Development:
+   • Built an interactive web interface using Streamlit
+   • Users can input Make, Model, Year, and Base MSRP
+   • App predicts EV type (BEV or PHEV) in real-time
+
+6. Testing and Validation:
+   • Verified predictions with sample inputs
+   • Ensured model outputs were consistent and accurate
